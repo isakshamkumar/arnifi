@@ -60,6 +60,7 @@ const HeroSection = () => {
         <img src={Image} alt="Scroll Down" />
         </Box>
       </Box>
+      
     </>
   );
 };

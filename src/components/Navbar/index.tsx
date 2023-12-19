@@ -3,7 +3,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <Box position={'fixed'} top={"0"} left={"0"} width={"94%"} display={'flex'} padding={"35px 50px"} justifyContent={'space-between'}  >
+    <Box position={'fixed'} zIndex={'100'} top={"0"} left={"0"} width={"94%"} display={'flex'} padding={"35px 50px"} justifyContent={'space-between'}  >
       <Box sx={{color:'#F9F4E6',fontWeight:'bold',fontSize:'25px'}}>
         Logo
       </Box>

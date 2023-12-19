@@ -8,7 +8,8 @@ const Card = (props:any) => {
         width: "509px",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "flex-end",
+        justifyContent: "center",
+        gap:"10px",
         transform: {lg: `${props.index %2 == 0 ?  "translateY(-120px)" : ""}` , xs: "0"}
     }}>
         <Box width={"100%"} height={"561px"}>
