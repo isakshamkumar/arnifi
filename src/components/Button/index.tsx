@@ -5,9 +5,12 @@ import React, { ReactNode } from 'react';
 type CustomButtonProps = {
   children: ReactNode;
   externalStyles?: React.CSSProperties;
+
+  bottom?: string | { [key: string]: string };
+
 };
 
-const CustomButton: React.FC<CustomButtonProps> = ({ children, externalStyles }) => {
+const CustomButton: React.FC<CustomButtonProps> = ({ children, externalStyles ,bottom}) => {
   return (
     <Button
       variant="contained"
@@ -16,6 +19,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({ children, externalStyles })
         borderRadius: '30px',
         opacity: '0.7',
         ...externalStyles,
+        // bottom:bottom
       }}
     >
       <Box sx={{ display: 'flex', alignItems: 'center' }}>

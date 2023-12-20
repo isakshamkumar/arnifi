@@ -4,10 +4,10 @@ import { Facebook, Twitter, Instagram, Phone, MailOutline, LocationOn } from "@m
 
 const Footer: React.FC = () => {
   return (
-    <Grid container spacing={3} sx={{ padding: '20px 120px' }}>
+    <Grid container spacing={3} sx={{ padding: { xs: '20px', md: '20px 120px' } }}>
  
-      <Grid item lg={7} md={6} xs={12}>
-        <Box display="flex" flexDirection="column" padding={{ xs: "0 10px", md: "0 20px" }} width={{ xs: "100%", md: 407 }} gap={3} color="#FFF" justifyContent="center">
+      <Grid item xs={12} sm={4} md={6} lg={6}>
+        <Box display="flex" flexDirection="column" padding={{ xs: "0 10px", md: "0 20px" }} width={{ xs: "100%", sm: 250,md:300 }} gap={3} color="#FFF" justifyContent="center">
      
           <Typography variant="h6" color="#FFF">Your Logo</Typography>
           <Typography variant="body2" color="#4294FD">Lorem ipsum dolor sit</Typography>
@@ -29,9 +29,9 @@ const Footer: React.FC = () => {
       </Grid>
 
      
-      <Grid item lg={3} md={4} xs={12} sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+      <Grid item xs={12} sm={4} md={4} lg={3} sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
         
-        <Box display="flex" flexDirection="column" gap={3} width={{ xs: "100%", md: 210 }} color="#FFF">
+        <Box display="flex" flexDirection="column" justifyContent={"center"} alignItems={"center"} gap={3} width={{ xs: "100%", md: 210 }} color="#FFF">
           <Box display={"flex"} flexDirection={{ xs: "column", md: "row" }} gap={3} justifyContent={{ xs: "center", md: "flex-start" }}>
             <Typography variant="h6"><LocationOn /></Typography>
             <Typography variant="body2">998 Devonshire Ave.Camp Hill, PA 17011</Typography>
@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
       </Grid>
 
    
-      <Grid item lg={2} md={2} xs={12} sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+      <Grid item xs={12} sm={4} md={2} lg={2} sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
    
         <List>
           <ListItem>

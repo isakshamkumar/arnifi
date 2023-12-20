@@ -1,19 +1,19 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
-import Button from "../../components/Button"
+import Button from "../../components/Button";
 import Card from "../../components/Card";
 import Projects1 from "../../images/Projects-1.png";
 import Projects2 from "../../images/Projects-2.png";
 import Projects3 from "../../images/Projects-3.png";
 import Projects4 from "../../images/Projects-4.png";
 
-const Projects = () => {
+const Projects: React.FC = () => {
   interface Src {
     src: string;
   }
 
-  const ImageSrc = [
+  const ImageSrc: Src[] = [
     { src: Projects1 },
     { src: Projects2 },
     { src: Projects3 },
@@ -46,6 +46,7 @@ const Projects = () => {
             key={index}
             item
             xs={12}
+            sm={6}
             lg={6}
             md={6}
             style={{

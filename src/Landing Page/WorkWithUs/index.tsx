@@ -2,21 +2,22 @@ import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import Image from '../../images/workWithUs.png';
 
-const WorkWithUs = () => {
+const WorkWithUs:React.FC = () => {
   return (
     <Box
-      style={{
+      sx={{
         display: "flex",
         flexDirection: "column",
         justifyContent: 'center',
-        gap: "30px",
+        gap: {xs:'10px',sx:"30px"},
         position: 'relative',
         color: "white",
-        height: "310px",
-        width: '80%',
+        height: "510px",
+        width: {xs:'400px',sm:'700px',md:'1100px',lg:'1300px'},
      
         // padding:'0 0 0 15px',
-        margin: '160px auto',
+        marginX:'auto',
+        marginY:{xs:'100px',lg:'200px'}
         // border:"2px solid red"
       }}
     >
@@ -34,20 +35,21 @@ const WorkWithUs = () => {
         alt="Work With Us"
       />
 
-      <Typography sx={{ paddingLeft: '58px' }} color={"#FFF"} fontSize={13} fontWeight={600}>
+      <Typography sx={{ paddingLeft: '58px',fontSize:{xs:'11px',sm:'13'} }} color={"#FFF"}   fontWeight={600}>
         Work With Us
       </Typography>
-      <Typography sx={{ paddingLeft: '58px' }} color={"#FFF"} fontSize={40} fontWeight={600}>
+      <Typography sx={{ paddingLeft: '58px',fontSize:{xs:'25px',sm:'40px'} }} color={"#FFF"} fontWeight={600}>
         We’d love to get to know you.
       </Typography>
       <Button
         sx={{
-          width: "200px",
+          width: {xs:'180px',sm:"200px"},
           marginLeft: "58px",
+          marginBottom:'5px',
           borderRadius: "30px",
           backgroundColor: 'white',
           ":hover": {
-            backgroundColor: 'white', // Add the correct hover style here
+            backgroundColor: 'white', 
           },
         }}
         variant="contained"
@@ -57,7 +59,7 @@ const WorkWithUs = () => {
           backgroundClip: "text",
           color: 'transparent',
           WebkitBackgroundClip: "text",
-          fontSize: "18px",
+          fontSize: {xs:'12px',sm:"18px"},
         }}>
           Get in touch
         </Typography>
