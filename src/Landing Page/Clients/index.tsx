@@ -6,6 +6,7 @@ import HealthKart from "../../images/Landing-HealthKart.png";
 import ClientCard from "../../components/ClientCard";
 import { Box, Grid, Typography } from "@mui/material";
 import Button from '../../components/Button'
+import ClientSectionBg from "../../components/Background/ClientSectionBackground";
 
 
 const Clients = () => {
@@ -34,6 +35,7 @@ const Clients = () => {
   return (
     <>
       <Box style={{  margin: "100px 0" }}>
+        <ClientSectionBg/>
         <Box style={{display: 'flex',flexDirection:'column', gap:"15px",
         justifyContent: 'center',alignItems:'center'}}>
           <Typography color={"#F3F3F3"} style={{fontSize:"16px",fontWeight:'500'}} variant="body2">
